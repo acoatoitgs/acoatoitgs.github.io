@@ -1,0 +1,214 @@
+
+body{
+    background-color: rgb(12, 12, 12);
+    font-family: 'Montserrat';
+}
+
+
+/* Global */
+
+.center {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    vertical-align: middle;
+  }
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0 }
+   100% {opacity: 1}
+}
+.slide-in-animation{
+    animation: fadeIn 1s;
+    animation-fill-mode: forwards;
+}
+
+/* Header */
+.header{
+    padding-top:10px;
+    min-height: 60px;
+    max-height: 60px;
+}
+
+.language-selector{
+    opacity:0.15;
+    transition:all 0.2s;
+    width:90%;
+}
+.language-selector:hover{
+    opacity:1;
+    width:95%;
+}
+
+
+/*Introduction*/
+.introduction{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-style: italic;
+
+    color:white;
+}
+
+
+/*Working card*/
+.card{
+    background-color: rgb(20, 20, 20);
+    color:white;
+    border-radius: 20px;
+    vertical-align:middle;
+
+}
+.working-on-card{
+    opacity: 0;
+}
+
+
+/*About me*/
+.about-me-wrapper{
+    padding-top: 30vh;
+}
+.about-me{
+    opacity: 0;
+    color:#fff;
+}
+.about-me p{
+    font-size:19px;
+}
+
+/* Skills */
+.skills{
+    padding-top:40vh;
+    color:white;
+    text-align: center;
+}
+
+
+.individual-skill div{
+    height:  8vh;
+    margin-top: 35px;
+}
+
+.skill-name h1{
+    text-align: center;
+    position: relative;
+    top:17%;
+    font-style:italic;
+}
+
+.rating-bar{
+    background-color: rgb(114, 221, 71);
+    border-radius:10px;
+    margin:3px;
+    max-height: 50px;
+    max-width: 30px;
+}
+
+/*Contact page*/
+.contact-page-wrapper{
+    padding-top: 60vh;
+    padding-bottom: 30vh;
+}
+.contact-page{
+    
+    
+    text-align: center;
+    color:white;
+}
+.contact-page input::placeholder, .contact-page textarea::placeholder{
+    color: rgb(210,210,210);
+    opacity: 0.5;
+}
+
+.contact-page input,.contact-page textarea{
+    color: rgb(210,210,210);
+    caret-color: white;
+    background-color: rgb(30,30,30);
+    border: 0;
+    max-width: 400px;
+    width: 15vw;
+    text-align: center;
+
+}
+
+.contact-page input:focus,.contact-page textarea:focus{
+    color: rgb(210,210,210);
+    background-color: rgb(30,30,30);
+    border: 0;
+}
+
+.contact-page input:-webkit-autofill,
+.contact-page input:-webkit-autofill:hover, 
+.contact-page input:-webkit-autofill:focus, 
+.contact-page input:-webkit-autofill:active{
+    color: rgb(210,210,210);
+    -webkit-box-shadow: 0 0 0 30px rgb(30,30,30) inset !important;
+    -webkit-text-fill-color: rgb(210,210,210) !important;
+    border: 0;
+}
+.outer-social{
+    display: flex;
+    justify-content: center;
+}
+.social-table{
+    width:200px;
+    height: 200px;
+    display:grid;
+    grid-template-columns: 100px 100px;
+    grid-row: auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;   
+    justify-content: center;
+
+    
+}
+.box{
+    padding:20px;
+    border-radius:10px;
+    color:#fff;
+    display:flex;
+}
+@media (min-width: 992px)
+{
+    .outer-social{
+        margin-top: -25px;
+    }
+    #data-structures-reize-bug{
+        font-size:10px;
+    }
+}
+
+@media (max-width: 991px)
+{
+    .contact-page input,.contact-page textarea{
+        color: rgb(210,210,210);
+        caret-color: white;
+        background-color: rgb(30,30,30);
+        border: 0;
+        max-width: 400px;
+        width: 50vw;
+        text-align: center;
+    
+    }
+    
+}
+
+@media (min-width: 1200px) {
+    #data-structures-resize-bug h1{
+        font-size:36px;
+    }
+}
+
+@media (max-width: 1199px) {
+    #data-structures-resize-bug h1{
+        font-size:30px;
+    }
+}
+
+@media (max-width: 767px) {
+    #data-structures-resize-bug h1{
+        font-size:20px;
+    }
+
+}

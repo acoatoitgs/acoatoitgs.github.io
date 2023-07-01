@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <!-- Default HTML tags-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fonts and other imports-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/index.css" />
+
+    <!-- Actual head-->
+    <title>Andrea Coato</title>
+    <link rel="icon" href="./src/files/favicon.svg" />
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8"></div>
+          <div class="col-lg-4 col">
+            <div class="header">
+              <div class="row">
+                <div class="col-8"></div>
+                <div class="col-2">
+                  <a href="./index.html"
+                    ><img src="src/files/en-UK.svg" class="language-selector" />
+                  </a>
+                </div>
+                <div class="col-2">
+                  <a href="./it-IT.html"
+                    ><img src="src/files/it-IT.svg" class="language-selector" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container introduction">
+      <!-- Introduction-->
+      <div class="row slide-in-animation">
+        <div class="col-lg-6 col-12" style="margin-top: 30vh">
+          <p>
+            Ciao, sono <strong>Andrea</strong>, una persona motivata e
+            desiderosa di avviare la mia carriera come
+            <strong>sviluppatore software</strong>.
+            <br />
+            <br />
+            Con una naturale predisposizione a
+            <strong>imparare velocemente</strong>, mi distinguo per le mie
+            abilità di <strong>algoritmica</strong>,
+            <strong>matematica</strong> e <strong>organizzazione</strong>,
+            adattandomi rapidamente alle tecnologie in continua evoluzione.
+          </p>
+        </div>
+      </div>
+
+      <!-- About me-->
+
+      <div class="container about-me-wrapper">
+        <div class="row">
+          <div class="col-lg-8"></div>
+          <div class="col-lg-4 col about-me">
+            <h1>Chi sono</h1>
+            <p>
+              Sono un ragazzo di <strong> 17 anni </strong> da Verona,
+              appassionato di informatica fin da quando mio padre mi mostrò i
+              giochi sul suo primo PC, quando avevo solo
+              <strong> 6 anni </strong>. Durante la mia giovinezza, ho sempre
+              avuto la passione per imparare cose nuove e ho trovato nella
+              programmazione un modo per esprimere la mia
+              <strong>creatività e curiosità </strong>. Ho una
+              <strong> buona conoscenza </strong>
+              di diversi linguaggi di programmazione, tra cui
+              <strong> C# </strong>,<strong> C++ </strong> e<strong>
+                Java </strong
+              >, e sto continuando a migliorare le mie competenze su questi
+              linguaggi. Sono alla ricerca di nuove sfide nel campo
+              dell'informatica per mettere alla prova le mie abilità e
+              <strong> continuare a crescere come sviluppatore </strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card -->
+      <div class="row">
+        <div class="col-lg-6 col-12" style="margin-top: 30vh">
+          <div class="card working-on-card">
+            <h1 class="card-header">Attualmente studiando...</h1>
+            <div class="card-body">
+              <div class="container">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="./src/files/reactjs.svg" class="center" />
+                  </div>
+                  <div class="col-8">
+                    ReactJs paired with bootstrap and typescript
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact page-->
+    <div class="contact-page-wrapper">
+      <div class="container contact-page">
+        <h1>Mettiamoci in contatto!</h1>
+        <div class="row" style="margin-top: 10vh">
+          <div class="col-lg-3 col-12"></div>
+
+          <div
+            class="col-lg-3 col-12"
+            id="contact-form"
+            style="margin-bottom: 3vh"
+          >
+            <form
+              action="https://formsubmit.co/2ab8aab20e4be21ae1ffd2f8b5e7207c"
+              method="POST"
+              autocomplete="off"
+              style="display: inline-block"
+            >
+              <div>
+                <!-- Honeypot & Captcha & Next page-->
+                <input type="text" name="_honey" style="display: none" />
+                <input type="hidden" name="_captcha" value="false" />
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="http://localhost:5173/success.html"
+                />
+                <input
+                  type="text"
+                  class="form-control"
+                  name="name"
+                  required
+                  placeholder="Full name"
+                  autocomplete="off"
+                />
+
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  style="margin-top: 1vh"
+                  placeholder="Email address"
+                  required
+                  autocomplete="off"
+                />
+
+                <textarea
+                  class="form-control"
+                  name="content"
+                  required
+                  placeholder="Content"
+                  style="margin-top: 2vh"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="btn btn-primary"
+                style="margin-top: 2vh"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+
+          <div class="col-lg-3 col-12" style="margin-bottom: 3vh">
+            <div class="container">
+              <div class="outer-social">
+                <div class="social-table">
+                  <div class="box">
+                    <a
+                      href="https://discordapp.com/users/653283416145395713"
+                      target="_blank"
+                    >
+                      <img src="./src/files/discord.svg" width="100%" />
+                    </a>
+                  </div>
+                  <div class="box">
+                    <a
+                      href="https://www.linkedin.com/in/andreacoato/"
+                      target="_blank"
+                    >
+                      <img src="./src/files/linkedin.svg" width="230%" />
+                    </a>
+                  </div>
+                  <div class="box">
+                    <a href="https://github.com/acoatoitgs" target="_blank">
+                      <img src="./src/files/github.svg" width="100%" />
+                    </a>
+                  </div>
+                  <div class="box">
+                    <a href="mailto:andrea.coato@gmail.com">
+                      <img src="./src/files/mail.svg" width="120%" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-12"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
